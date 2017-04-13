@@ -1,0 +1,25 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.suxia.backup"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.suxia.backup"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.suxia.backup"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.suxia.backup"
+        }
+    }
+}
