@@ -25,6 +25,17 @@
 		A2737BDE8A3F4BE89D7F983E /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B024ED41B2FE4FD1B97428D6 /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FAAF37E911D94295916F18F4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCD0BA78F2E4BFD9EB2D2EF /* CoreLocation.framework */; };
 		BA219E94F7E44A019E4B15B9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429C5BE1E80F405E90E5B405 /* AVFoundation.framework */; };
+		AB68A3B86A0C44409D80ED1A /* SOSPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F18D214A19E4A14A030DC32 /* SOSPicker.m */; };
+		21007ABF2C9445DDA343A452 /* ELCAlbumPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E434F19BDF4DD18AB20CFA /* ELCAlbumPickerController.m */; };
+		7A09F5F57DE04D2699535C70 /* ELCAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = CC366DF1504D41A6B540E3BE /* ELCAsset.m */; };
+		A9ACA05890384F888A6432AC /* ELCAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18734E9362FF420F89D51295 /* ELCAssetCell.m */; };
+		002B96C4F3EE449CAC7FF91A /* ELCAssetTablePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F70E94B7464066987E97C7 /* ELCAssetTablePicker.m */; };
+		8F3FF95DEAB84AFEB61F9B64 /* ELCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967F9CFA67164F5F982617A6 /* ELCImagePickerController.m */; };
+		2BD6A06A33984DA1A857C7E5 /* ELCAlbumPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 506170B7558F479586516329 /* ELCAlbumPickerController.xib */; };
+		735935F34BE140499488CEA4 /* ELCAssetPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 854981400D004DDFB678C9B9 /* ELCAssetPicker.xib */; };
+		EDE00B4F4CED42ACBB7CEE8D /* ELCAssetTablePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76DD6E562ADC469EA57869A8 /* ELCAssetTablePicker.xib */; };
+		A181C6CB070A44D38971F1C5 /* Overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BEF2678C33B4D5AAC70140D /* Overlay.png */; };
+		AD705FE06AC9488DBDC8D332 /* Overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C967F4D09F084B66A3E8A8DC /* Overlay@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +92,25 @@
 		B024ED41B2FE4FD1B97428D6 /* ImageIO.framework */ = {isa = PBXFileReference; name = "ImageIO.framework"; path = "System/Library/Frameworks/ImageIO.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		1BCD0BA78F2E4BFD9EB2D2EF /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		429C5BE1E80F405E90E5B405 /* AVFoundation.framework */ = {isa = PBXFileReference; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		5F18D214A19E4A14A030DC32 /* SOSPicker.m */ = {isa = PBXFileReference; name = "SOSPicker.m"; path = "cordova-plugin-image-picker/SOSPicker.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		65E434F19BDF4DD18AB20CFA /* ELCAlbumPickerController.m */ = {isa = PBXFileReference; name = "ELCAlbumPickerController.m"; path = "cordova-plugin-image-picker/ELCAlbumPickerController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		CC366DF1504D41A6B540E3BE /* ELCAsset.m */ = {isa = PBXFileReference; name = "ELCAsset.m"; path = "cordova-plugin-image-picker/ELCAsset.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		18734E9362FF420F89D51295 /* ELCAssetCell.m */ = {isa = PBXFileReference; name = "ELCAssetCell.m"; path = "cordova-plugin-image-picker/ELCAssetCell.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D4F70E94B7464066987E97C7 /* ELCAssetTablePicker.m */ = {isa = PBXFileReference; name = "ELCAssetTablePicker.m"; path = "cordova-plugin-image-picker/ELCAssetTablePicker.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		967F9CFA67164F5F982617A6 /* ELCImagePickerController.m */ = {isa = PBXFileReference; name = "ELCImagePickerController.m"; path = "cordova-plugin-image-picker/ELCImagePickerController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		63BD0409D2C8411082E847FB /* SOSPicker.h */ = {isa = PBXFileReference; name = "SOSPicker.h"; path = "cordova-plugin-image-picker/SOSPicker.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		98CB789D93A54E9481B969C6 /* ELCAlbumPickerController.h */ = {isa = PBXFileReference; name = "ELCAlbumPickerController.h"; path = "cordova-plugin-image-picker/ELCAlbumPickerController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		000EBE4931364D5AB57F8CE7 /* ELCAsset.h */ = {isa = PBXFileReference; name = "ELCAsset.h"; path = "cordova-plugin-image-picker/ELCAsset.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		ABDFD735EDF44FE8BE829B08 /* ELCAssetCell.h */ = {isa = PBXFileReference; name = "ELCAssetCell.h"; path = "cordova-plugin-image-picker/ELCAssetCell.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F70B690EFD684CD2B57487F1 /* ELCAssetPickerFilterDelegate.h */ = {isa = PBXFileReference; name = "ELCAssetPickerFilterDelegate.h"; path = "cordova-plugin-image-picker/ELCAssetPickerFilterDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		27878D0663A242A49370CBA9 /* ELCAssetSelectionDelegate.h */ = {isa = PBXFileReference; name = "ELCAssetSelectionDelegate.h"; path = "cordova-plugin-image-picker/ELCAssetSelectionDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8F8E165292E44CE38F2A7381 /* ELCAssetTablePicker.h */ = {isa = PBXFileReference; name = "ELCAssetTablePicker.h"; path = "cordova-plugin-image-picker/ELCAssetTablePicker.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4EFD88E095EB462C9A179EBE /* ELCImagePickerController.h */ = {isa = PBXFileReference; name = "ELCImagePickerController.h"; path = "cordova-plugin-image-picker/ELCImagePickerController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		506170B7558F479586516329 /* ELCAlbumPickerController.xib */ = {isa = PBXFileReference; name = "ELCAlbumPickerController.xib"; path = "ELCAlbumPickerController.xib"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = file.xib; explicitFileType = undefined; includeInIndex = 0; };
+		854981400D004DDFB678C9B9 /* ELCAssetPicker.xib */ = {isa = PBXFileReference; name = "ELCAssetPicker.xib"; path = "ELCAssetPicker.xib"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = file.xib; explicitFileType = undefined; includeInIndex = 0; };
+		76DD6E562ADC469EA57869A8 /* ELCAssetTablePicker.xib */ = {isa = PBXFileReference; name = "ELCAssetTablePicker.xib"; path = "ELCAssetTablePicker.xib"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = file.xib; explicitFileType = undefined; includeInIndex = 0; };
+		7BEF2678C33B4D5AAC70140D /* Overlay.png */ = {isa = PBXFileReference; name = "Overlay.png"; path = "Overlay.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C967F4D09F084B66A3E8A8DC /* Overlay@2x.png */ = {isa = PBXFileReference; name = "Overlay@2x.png"; path = "Overlay@2x.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +184,11 @@
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* backup-Info.plist */,
 				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				506170B7558F479586516329 /* ELCAlbumPickerController.xib */,
+				854981400D004DDFB678C9B9 /* ELCAssetPicker.xib */,
+				76DD6E562ADC469EA57869A8 /* ELCAssetTablePicker.xib */,
+				7BEF2678C33B4D5AAC70140D /* Overlay.png */,
+				C967F4D09F084B66A3E8A8DC /* Overlay@2x.png */,
 			);
 			name = Resources;
 			path = "backup/Resources";
@@ -203,6 +238,20 @@
 				B210B12F7F8C4F7A98975CE1 /* CDVCamera.h */,
 				465F6D3640634D48AA54B506 /* CDVJpegHeaderWriter.h */,
 				5BA2AD9BD8B840B8B8CAF0F8 /* CDVExif.h */,
+				5F18D214A19E4A14A030DC32 /* SOSPicker.m */,
+				65E434F19BDF4DD18AB20CFA /* ELCAlbumPickerController.m */,
+				CC366DF1504D41A6B540E3BE /* ELCAsset.m */,
+				18734E9362FF420F89D51295 /* ELCAssetCell.m */,
+				D4F70E94B7464066987E97C7 /* ELCAssetTablePicker.m */,
+				967F9CFA67164F5F982617A6 /* ELCImagePickerController.m */,
+				63BD0409D2C8411082E847FB /* SOSPicker.h */,
+				98CB789D93A54E9481B969C6 /* ELCAlbumPickerController.h */,
+				000EBE4931364D5AB57F8CE7 /* ELCAsset.h */,
+				ABDFD735EDF44FE8BE829B08 /* ELCAssetCell.h */,
+				F70B690EFD684CD2B57487F1 /* ELCAssetPickerFilterDelegate.h */,
+				27878D0663A242A49370CBA9 /* ELCAssetSelectionDelegate.h */,
+				8F8E165292E44CE38F2A7381 /* ELCAssetTablePicker.h */,
+				4EFD88E095EB462C9A179EBE /* ELCImagePickerController.h */,
 			);
 			name = Plugins;
 			path = "backup/Plugins";
@@ -284,6 +333,11 @@
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				2BD6A06A33984DA1A857C7E5 /* ELCAlbumPickerController.xib in Resources */,
+				735935F34BE140499488CEA4 /* ELCAssetPicker.xib in Resources */,
+				EDE00B4F4CED42ACBB7CEE8D /* ELCAssetTablePicker.xib in Resources */,
+				A181C6CB070A44D38971F1C5 /* Overlay.png in Resources */,
+				AD705FE06AC9488DBDC8D332 /* Overlay@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +375,12 @@
 				128E7D19EA7A4042A681CD6D /* UIImage+CropScaleOrientation.m in Sources */,
 				A3059646383B4815A65E6F10 /* CDVCamera.m in Sources */,
 				B3D007DC04B24054B40CC7E6 /* CDVJpegHeaderWriter.m in Sources */,
+				AB68A3B86A0C44409D80ED1A /* SOSPicker.m in Sources */,
+				21007ABF2C9445DDA343A452 /* ELCAlbumPickerController.m in Sources */,
+				7A09F5F57DE04D2699535C70 /* ELCAsset.m in Sources */,
+				A9ACA05890384F888A6432AC /* ELCAssetCell.m in Sources */,
+				002B96C4F3EE449CAC7FF91A /* ELCAssetTablePicker.m in Sources */,
+				8F3FF95DEAB84AFEB61F9B64 /* ELCImagePickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

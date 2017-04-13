@@ -15,6 +15,9 @@
         },
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "com.suxia.backup"
+        },
+        "cordova-plugin-image-picker": {
+            "PACKAGE_NAME": "com.suxia.backup"
         }
     },
     "dependent_plugins": {

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Read large file by slice</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <script type="text/javascript" charset="utf-8" src="../js/jquery-3.1.1.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../cordova.js"></script>       
+        <link rel="stylesheet" type="text/css" href=“../css/index.css">
+    </head>
+    <body>
+       
+        <input type="file" onchange="previewLargeFile()" style="height:50px;width:300px;"><br>
+        <div class="readprocesswrap">
+            <div id="process" class="readprocess"></div>
+        </div>
+        <img src="" height="200" alt="Image preview...">   
+
+
+        <div id="preview"></div>
+
+           <script>       
+ 
+               
+
+                function previewLargeFile(){
+
+                    var preview = document.querySelector('img');
+                    var files    = document.querySelector('input[type=file]').files;
+
+                    if (files) {
+                        [].forEach.call(files, readAndPreview);
+                    }
+                         
+                
+                }
+                function readAndPreview(file){
+                    var isPreview=false;
+                    if ( /\.(jpe?g|png|gif)$/i.test(file.name) ){
+                        isPreview=true;
+                    }
+
+                    var step=500*1024,
+                        chunks=[],
+                        loaded=0,
+                        total=file.size;
+
+                    var reader  = new FileReader();
+
+                    reader.onload= function (e) {
+                        chunks.push(new Uint8Array(this.result));
+                        loaded+=e.loaded;
+                        var percent=Math.round(loaded/total,2)*100+"%";
+                        $("#process").css("width",percent);
+
+                        if(loaded<total){
+                            readBlob(loaded);
+                        }else{
+                            loaded=total;
+                            var blob=new Blob(chunks,{type:"application/octet-stream"});
+                            if(preview){
+                                preview(blob);
+                            }
+                        }
+                    };
+
+
+
+                    readBlob(0);
+
+                    function readBlob(start){
+                        var blob=file.slice(start,start+step);
+                        reader.readAsArrayBuffer(blob);
+                    }           
+
+                } 
+                     
+
+                function preview(fileblob){
+                    var preview = document.querySelector('#preview');
+                    var reader  = new FileReader();
+
+                    reader.onload= function () {
+                        var image = new Image();
+                        image.height = 500;
+                        image.width=500;            
+                        image.src = this.result;
+                        preview.appendChild( image );
+                    };
+
+                    if (fileblob) {
+                        reader.readAsDataURL(fileblob);
+                    }
+                }              
+           
+           </script>
+    </body>
+</html>
