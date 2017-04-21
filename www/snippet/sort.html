@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div class="sap-editable-area medium-editor-element medium-editor-insert-plugin" id="medium-editor-1492125384893" medium-editor-textarea-id="medium-editor-1492125384893" contenteditable="true" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="2" medium-editor-index="4809c9f7-3d0a-6738-3e42-1081d80bfe2c" data-placeholder="点这里写文章内容" data-medium-focused="true"><div class="medium-insert-images ui-sortable medium-insert-active"><figure contenteditable="false">
+  <div>  <img src="http://www.microlele.com/dev/wp-content/uploads/2017/04/Hydrangeas-3.jpg" alt="" class="ui-sortable-handle"></div>
+        
+<figcaption contenteditable="true" class="">是ASDASD&nbsp;</figcaption></figure></div><div class="medium-insert-images ui-sortable"> <figure contenteditable="false">
+  <div>  <img src="http://www.microlele.com/dev/wp-content/uploads/2017/04/Lighthouse.jpg" alt="" class="ui-sortable-handle"></div>
+        
+<figcaption contenteditable="true" class="">ASDF ASDF SDF&nbsp;</figcaption></figure></div><div class="medium-insert-images ui-sortable"> <figure contenteditable="false">
+  <div>  <img src="http://www.microlele.com/dev/wp-content/uploads/2017/04/Penguins-2.jpg" alt="" class="ui-sortable-handle"></div>
+        
+<figcaption contenteditable="true" class="">FASDFSADF</figcaption></figure></div><p><br></p><div class="medium-insert-buttons" contenteditable="false" style="left: 294px; top: 173px; display: block;" data-active-addon="images">
+    <button class="medium-insert-buttons-show" type="button"><span>+</span></button>
+    <ul class="medium-insert-buttons-addons" style="display: none;">
+            <li style="display: inline-block;"><button data-addon="images" data-action="add" class="medium-insert-action" type="button"><span class="fa fa-camera"></span></button></li>
+    </ul>
+</div></div>
+
+<style type="text/css">
+.dashicons{
+    z-index: 99;
+    position: absolute;
+    background: #343434;
+    color: white;
+    width: 32px;
+    height: 32px;
+}
+.dashicons-arrow-up-alt{
+    
+    top: 42px;
+    right: 10px;
+
+}
+.dashicons-arrow-down-alt{
+    top: 84px;
+    right: 10px;
+}
+
+.medium-insert-images{
+    position: relative;
+}
+.medium-insert-images img{
+    width: 300px;
+    height: 200px;
+}
+</style>
+
+
+<script type="text/javascript">
+    $(function(){
+        $(".medium-insert-images div").append('<span class="dashicons dashicons-arrow-up-alt"></span>');
+        $(".medium-insert-images div").append('<span class="dashicons dashicons-arrow-down-alt"></span>');
+        $(".medium-insert-images").on("click",function(e){
+            var $target=$(e.target);
+            if($target.hasClass("dashicons-arrow-up-alt")){
+
+                var $current=$target.parents(".medium-insert-images");
+                var $pre=$current.prev(".medium-insert-images");
+                if($pre.length>0){
+                    $current.insertBefore($pre);
+                }
+            }else if($target.hasClass("dashicons-arrow-down-alt")){
+                var $current=$target.parents(".medium-insert-images");
+                var $next=$current.next(".medium-insert-images");
+                if($next.length>0){
+                    $current.insertAfter($next);
+                }
+
+            };
+        });
+
+    })
+    
+
+
+
+</script>
+
+
+</body>
+</html>>
+
+    
+
+
+
+
+
+
+
+
+
+
